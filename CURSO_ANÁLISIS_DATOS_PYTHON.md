@@ -22,13 +22,15 @@ Numpy, es un paquete para realizar computación científica y operaciones y cál
 #### Ejercicio 1: Crea un array de una dimensión. (Vector)
 
 ```python
-
+vector = np.arange(5)
+print(vector)
 ```
 
 #### Ejercicio 2: Crea un array de dos dimensiones. (Array)
 
 ```python
-
+matriz = np.arange(4).reshape(2,2)
+print(matriz)
 ```
 
 #### Ejercicio 3: Crea un vector y un array a partir de la siguiente lista
@@ -37,31 +39,41 @@ Numpy, es un paquete para realizar computación científica y operaciones y cál
 *pista tienes que crear una lista y utilizar np.array()*
 
 ``` python
+lista = [1, 11, 111, 1111]
+vector = np.array(lista)
+array = np.array([lista])
 
+print(vector)
+print(array)
 ```
 
 #### Ejercicio 4: Crea un array 5x5 de zeros
 ``` python
-
+zero = np.zeros([5,5])
+print(zero)
 ```
 
 #### Ejercicio 5: Crea un vector cuyo límite inferior sea 0 y el límite superior sea 20 y tenga 5 elementos comprendidos en ese intervalo que sean liealmente iguales
 
  ```python
-
+pasos = np.linspace(start=0, stop=20, num=5)
+print(pasos)
 ```
 
 #### Ejercicio 6: Crea un array de 8 elementos de 2x2x2 de ceros (Tensor)
 
 ```python
-
+tensor = np.zeros((2,2,2))
+print(tensor)
 ```
 
 ####  Ejercicio 7: Crea un array que vaya de 2 al 20 y obten el elememnto de la posición 7
 
 
 ```python
-
+seven = np.arange(2,20)
+print(seven[7])
+#Este codigo crea un array de veinte elementos y luego imprime tpdps los elementos de ese array partiendo de la posicion 2 en adelante
 ```
 
 #### Ejercicio 8: crea un vector de 20 elementos y mediante el método slice() crea otro vector a partir del vector de 20 elementos que empiece en 1, termine en 10 y tenga los números de dos en dos
