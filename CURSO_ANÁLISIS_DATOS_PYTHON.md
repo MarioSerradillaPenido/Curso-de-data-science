@@ -79,7 +79,12 @@ print(seven[7])
 #### Ejercicio 8: crea un vector de 20 elementos y mediante el método slice() crea otro vector a partir del vector de 20 elementos que empiece en 1, termine en 10 y tenga los números de dos en dos
 
 ``` python
+ej8 = np.arange(20)
 
+neo_vector = ej8[1:10:2]
+
+print(ej8)
+print(neo_vector)
 ```
 
 #### Ejercicio 9: Explica el siguiente código:
@@ -90,14 +95,30 @@ print(arr7[2:])
 ```
 
 Escribe aquí tu explicación:
-
+``` python
+#Este codigo crea un array de veinte elementos y luego imprime tpdps los elementos de ese array partiendo de la posicion 2 en adelante
+```
 #### Ejercicio 10: Utilizando lo anterior a partir del arr7 quiero obtener una lista que va de 0 a 15
 
 ``` python
-
+arr7 = np.arange(20)
+print(arr7[:16])
 ```
 #### Ejercicio 11: Crea un array de ceros de 3x3. A partir de ese array prueba el atributo shape, ndim, y itemsize. Explica que nos dicen estos atributos sobre la estructura
+``` python
+array_ceros = np.zeros((3, 3))
 
+print(array_ceros)
+print(array_ceros.shape)
+#Este atributo nos dice las dimensiones del array
+
+print(array_ceros.ndim)
+#Este nos indica la cantidad de dimensiones. En este caso, es bidimensional
+
+print(array_ceros.itemsize)
+#Por ultimo, este nos dice el tamaño en bytes de cada elemento del array
+
+```
 
 # LEER Y ESCRIBIR EN FICHEROS
 
@@ -112,3 +133,6 @@ np.savetxt('newfilex.csv', arr_csv, delimiter = ',')
 
 Explcia que hace este código
 
+```python
+#He probado el codigo en VScode pero me ha dado errores, por ahora lo unico que se es que usa la biblioteca numpy para hacer uso de archivos .cvs
+```
